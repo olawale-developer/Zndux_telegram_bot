@@ -15,11 +15,13 @@ function sendMessage(chatId, message) {
   });
 }
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
+    host: 'zndux-telegrambot.cjhb1gki5cfu.eu-north-1.rds.amazonaws.com',
+    port: '3306',
+    user: 'admin',
+    password: 'Sirfitech1#',
     database: 'Telegram_Database'
 })
+
 
 
 bot.onText(/\/start/, (msg) => {
